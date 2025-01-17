@@ -1,13 +1,12 @@
-const GITHUB_API_URL = "https://github.com/mouradsellam2/pluginEdge/issues";
-const GITHUB_TOKEN = "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"; // Ne jamais exposer le token directement en production
+const GITHUB_API_URL = "https://api.github.com/repos/mouradsellam2/pluginEdge/issues";
+const GITHUB_TOKEN = "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"; // Ne jamais exposer le token directement en production
 const FILTER = "bug"; // Exemple de filtre (par label, etc.)
 
 async function checkNewIssues() {
     const response = await fetch(`${GITHUB_API_URL}?labels=${FILTER}`, {
         method: "GET",
         headers: {
-            "Authorization": `token ${GITHUB_TOKEN}`,
-            "Accept": "application/vnd.github.v3+json"
+            "Authorization": `token ${GITHUB_TOKEN}`
         }
     });
 
