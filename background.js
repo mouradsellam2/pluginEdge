@@ -1,5 +1,5 @@
-const GITHUB_API_URL = "https://api.github.com/repos/{owner}/{repo}/issues";
-const GITHUB_TOKEN = "votre_token"; // Ne jamais exposer le token directement en production
+const GITHUB_API_URL = "https://github.com/mouradsellam2/pluginEdge/issues";
+const GITHUB_TOKEN = "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"; // Ne jamais exposer le token directement en production
 const FILTER = "bug"; // Exemple de filtre (par label, etc.)
 
 async function checkNewIssues() {
