@@ -35,7 +35,7 @@ function notifyUser(issues) {
 }
 
 // Vérifie les tickets toutes les 5 minutes
-setInterval(checkNewIssues, 5 * 60 * 1000);
+setInterval(checkNewIssues, 1 * 15 * 1000);
 
 // Demander la permission pour afficher des notifications
 chrome.notifications.onClicked.addListener(function(notificationId) {
